@@ -1,21 +1,23 @@
-package br.com.thiengo.pdfviwertest
+package br.com.satiro.pdfviwertest
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
-import br.com.thiengo.pdfviwertest.data.Database
+import br.com.satiro.pdfviwertest.data.Database
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class GradeDoc : AppCompatActivity(){
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        initRecycler()
+       initRecycler()
     }
+
 
     override fun onResume() {
         super.onResume()
