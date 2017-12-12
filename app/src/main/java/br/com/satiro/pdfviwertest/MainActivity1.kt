@@ -5,15 +5,15 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import br.com.satiro.pdfviwertest.data.Database
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main1.*
 
 
-class GradeDoc : AppCompatActivity(){
+class MainActivity1 : AppCompatActivity(){
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main1)
 
        initRecycler()
     }
@@ -25,15 +25,15 @@ class GradeDoc : AppCompatActivity(){
     }
 
     private fun initRecycler() {
-        rv_todo.setHasFixedSize(true)
+        rv_todo1.setHasFixedSize(true)
 
         val mLayoutManager = LinearLayoutManager(this)
-        rv_todo.layoutManager = mLayoutManager
+        rv_todo1.layoutManager = mLayoutManager
 
         val divider = DividerItemDecoration( this, mLayoutManager.orientation )
-        rv_todo.addItemDecoration(divider)
+        rv_todo1.addItemDecoration(divider)
 
         val adapter = DocAdapter(this, Database.getDocs())
-        rv_todo.adapter = adapter
+        rv_todo1.adapter = adapter
     }
 }

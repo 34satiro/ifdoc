@@ -30,7 +30,7 @@ public class Tela1 extends AppCompatActivity {
         btAvancar2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tela2 = new Intent(Tela1.this, GradeDoc.class);
+                Intent tela2 = new Intent(Tela1.this, MainActivity1.class);
                 tela2.putExtra("usuario", usuarioUsado);
                 startActivity(tela2);
 
