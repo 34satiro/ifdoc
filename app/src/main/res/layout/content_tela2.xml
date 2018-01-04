@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.satiro.pdfviwertest.Tela2"
+    tools:showIn="@layout/activity_tela2"
+    android:background="#fafafa">
+
+    <!--termina o card vieew do icone -->
+    <android.support.v7.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="135dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@null"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/iconeif"
+            />
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="35dp"
+            android:text="IF Doc's"
+            android:textColor="#3fa14c"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|center"
+            />
+    </android.support.v7.widget.CardView>
+    <!--termina o card vieew do icone -->
+
+
+    <!--card vieew do ppc dos cursos -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:backgroundTint="#fff"
+        android:onClick="listaPpc"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/iconeif"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="PPC dos cursos"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+
+
+            />
+    </android.support.v7.widget.CardView>
+    <!--termina o card vieew do ppc dos cursos -->
+
+    <!--card vieew dos documentos gerais-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="270dp"
+        android:backgroundTint="#fff"
+        android:onClick="listaDocG"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/iconeif"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="Documentos Gerais"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            />
+    </android.support.v7.widget.CardView>
+    <!--termina o card vieew dos documentos gerais-->
+
+    <!--card vieew do gremio-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="355dp"
+        android:backgroundTint="#fff"
+        android:onClick="listaGremio"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/iconeif"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="Grêmio Estudantil"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            />
+    </android.support.v7.widget.CardView>
+    <!--termina o card vieew do gremio-->
+
+</RelativeLayout>

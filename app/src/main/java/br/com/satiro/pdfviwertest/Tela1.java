@@ -5,42 +5,58 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Tela1 extends AppCompatActivity {
-    Button btAvancar1,btAvancar2;
+    Button btPcc,btGerais,btDcGremio;
     public static String usuarioUsado = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela1);
 
-        btAvancar1 = (Button) findViewById(R.id.btAvancar);
-        btAvancar2 = (Button) findViewById(R.id.btavancar2);
+        btPcc = (Button) findViewById(R.id.btPPC);
+        btGerais = (Button) findViewById(R.id.btGerais);
+        btDcGremio = (Button) findViewById(R.id.btDocGremio);
 
-        btAvancar1.setOnClickListener(new View.OnClickListener() {
+        btPcc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tela2 = new Intent(Tela1.this, MainActivity.class);
-                tela2.putExtra("usuario", usuarioUsado);
-                startActivity(tela2);
+                Intent pcc = new Intent(Tela1.this, MainActivity.class);
+                pcc.putExtra("usuario", usuarioUsado);
+                startActivity(pcc);
 
             }
         });
 
-        btAvancar2.setOnClickListener(new View.OnClickListener() {
+        btGerais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tela2 = new Intent(Tela1.this, MainActivity1.class);
-                tela2.putExtra("usuario", usuarioUsado);
-                startActivity(tela2);
+                Intent gerais = new Intent(Tela1.this, MainActivity1.class);
+                gerais.putExtra("usuario", usuarioUsado);
+                startActivity(gerais);
+
+            }
+        });
+
+        btDcGremio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gremio = new Intent(Tela1.this, MainActivity2.class);
+                gremio.putExtra( "usuario" , usuarioUsado );
+                startActivity(gremio);
 
             }
         });
 
 
+    }
 
-
-
+    public void teste( View v ){
+        Intent gremio = new Intent(Tela1.this, MainActivity2.class);
+        gremio.putExtra( "usuario" , usuarioUsado );
+        startActivity(gremio);
+        Toast.makeText( Tela1.this , "Deu certo" , Toast.LENGTH_LONG ).show();
     }
 
 }

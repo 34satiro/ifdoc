@@ -4,26 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.satiro.pdfviwertest.Tela1">
+    tools:context="br.com.satiro.pdfviwertest.Tela1"
+    android:background="#fff"
+    >
 
     <Button
-        android:id="@+id/btAvancar"
-        android:layout_width="100dp"
+        android:id="@+id/btPPC"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="141dp"
-        android:text="Avançar"
+        android:text="PPC´s de cada curso"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="194dp" />
+        tools:layout_editor_absoluteY="194dp"
+        android:layout_above="@+id/btGerais"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
 
     <Button
-        android:id="@+id/btavancar2"
+        android:id="@+id/btGerais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Avançar 2"
-        android:layout_below="@+id/btAvancar"
-        android:layout_alignLeft="@+id/btAvancar"
-        android:layout_alignStart="@+id/btAvancar"
-        android:layout_marginTop="77dp" />
+        android:text="Documentos Gerais"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignBaseline="@+id/btDocGremio"
+        android:layout_alignBottom="@+id/btDocGremio"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btDocGremio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gremio Estudantil"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:onClick="teste"        />
+
+    <ImageButton
+        android:id="@+id/btTeste"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#fff"
+        android:onClick="teste"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/kotlin_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btGerais"
+        android:layout_alignEnd="@+id/btGerais"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="37dp" />
 </RelativeLayout>
